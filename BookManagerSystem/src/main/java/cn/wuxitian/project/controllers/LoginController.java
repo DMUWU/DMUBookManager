@@ -9,18 +9,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class BookController {
-	@RequestMapping("/index")
-	public String toIndex() {
-
-		return "index";
-		
+public class LoginController {
+	@RequestMapping("users/login")
+	public String doLogin() {
+		return "login/login";
 	}
-	@RequestMapping("/books")
-	public String toBooks() {
-
-		return "book/books";
-		
-	}
-	
 }
