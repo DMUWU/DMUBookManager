@@ -10,9 +10,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class BookController {
+	@RequestMapping("/")
+	public String start() {
+		System.out.println("0411");
+		return "index";
+		
+	}
 	@RequestMapping("/index")
 	public String toIndex() {
-
+		System.out.println("0411");
 		return "index";
 		
 	}
