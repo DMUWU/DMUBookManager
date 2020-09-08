@@ -12,13 +12,17 @@ public class UserService {
 
 
 
-	public User getUser(String email) {
-		return userDAO.selectByEmail(email);
-	}
-	
-	public int addUser(User user){
-    	return userDAO.addUser(user);
-	}
-	
+
+	  public int addUser(User user){
+	    return userDAO.addUser(user);
+	  }
+
+	  public User getUser(String email) {
+	    return userDAO.selectByEmail(email);
+	  }
+
+	  public User getUser(int uid) {
+	    return userDAO.selectById(uid);
+	  }
 	
 }

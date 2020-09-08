@@ -6,9 +6,7 @@ public class User {
   	private String name;
 
   	private String email;
-    /**
-     * 经过md5加密
-     */
+ 
     private String password;
 	public int getId() {
 		return id;
