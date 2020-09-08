@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class CookieUtils {
 
-	  private static int COOKIE_AGE = 60 * 60 * 24 * 7;
+	private static int COOKIE_AGE = 60 * 60 * 24 * 7;
 
 	  public static void writeCookie(String key, String value, HttpServletResponse response) {
 	    Cookie cookie = new Cookie(key, value);

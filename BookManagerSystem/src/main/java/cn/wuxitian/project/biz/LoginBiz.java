@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class LoginBiz {
-	 @Autowired
+	@Autowired
 	  private UserService userService;
 
 	  @Autowired
@@ -91,5 +91,4 @@ public class LoginBiz {
 	    return ticket.getTicket();
 
 	  }
-	
 }

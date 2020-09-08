@@ -13,7 +13,7 @@ import cn.wuxitian.project.model.User;
 import cn.wuxitian.project.service.BookService;
 import cn.wuxitian.project.service.HostHolder;
 
-@Controller//当前是控制层 url 127.0.0.1《==》localhost  http://127.0.0.1:8080/BookManager/
+@Controller//当前是控制层 url 127.0.0.1《==》localhost  
 public class BookController {
 	  @Autowired
 	  private BookService bookService;
