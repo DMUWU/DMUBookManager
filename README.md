@@ -1,5 +1,5 @@
 # DMUBookManager
-实现一个图书馆管理系统
+实现一个图书馆管理系统 Spring Boot + MySQL + Mybatis + Freemaker...
 ## 1.搭建框架
 使用Maven来管理项目，并使用Spring Boot（SSM）作为我们项目的主体框架。
 用Spring Boot生成一个模板，同时自动添加了一些模块，然后将其他的依赖添加到Pom.xml里，如Freemaker、MyBatis等。
