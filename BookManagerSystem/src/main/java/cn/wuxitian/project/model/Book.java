@@ -11,10 +11,7 @@ public class Book {
 
   private String price;
 
-  /**
-   * {@link com.nowcoder.project.model.enums.BookStatusEnum}
-   */
-  private int status;
+    private int status;
 
   public int getId() {
     return id;

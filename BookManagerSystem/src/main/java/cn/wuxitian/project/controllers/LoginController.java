@@ -17,24 +17,24 @@ import cn.wuxitian.project.utils.CookieUtils;
 @Controller
 public class LoginController {
 	@Autowired
-	  private LoginBiz loginBiz;
-
-	  @Autowired
-	  private UserService userService;
-
-	  @RequestMapping(path = {"/users/register"}, method = {RequestMethod.GET})
-	  public String register() {
-	    return "login/register";
-	  }
-
-	  @RequestMapping(path = {"/users/register/do"}, method = {RequestMethod.POST})
-	  public String doRegister(
-	      Model model,
-	      HttpServletResponse response,
-	      @RequestParam("name") String name,
-	      @RequestParam("email") String email,
-	      @RequestParam("password") String password
-	  ) {
+	private LoginBiz loginBiz;
+	
+	@Autowired
+	private UserService userService;
+	
+	@RequestMapping(path = {"/users/register"}, method = {RequestMethod.GET})
+	public String register() {
+		return "login/register";
+	}
+	
+	@RequestMapping(path = {"/users/register/do"}, method = {RequestMethod.POST})
+	public String doRegister(
+		Model model,
+		HttpServletResponse response,
+		@RequestParam("name") String name,
+		@RequestParam("email") String email,
+		@RequestParam("password") String password
+	) {
 
 	    User user = new User();
 	    user.setName(name);

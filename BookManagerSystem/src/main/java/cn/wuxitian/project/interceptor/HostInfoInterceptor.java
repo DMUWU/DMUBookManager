@@ -23,10 +23,6 @@ public class HostInfoInterceptor implements HandlerInterceptor {
   @Autowired
   private UserService userService;
 
-  /**
-   * 为注入host信息
-   *
-   */
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
       throws Exception {

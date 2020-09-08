@@ -2,7 +2,7 @@ package cn.wuxitian.project.utils;
 
 
 import cn.wuxitian.project.model.User;
-
+//存取当前用户
 public class ConcurrentUtils {
 
   private static ThreadLocal<User> host = new ThreadLocal<>();
