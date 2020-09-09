@@ -13,7 +13,7 @@
 
 ## 各个package的介绍：
 * biz 用来存放比较复杂的逻辑
-* configuration 添加拦截器
+* configuration 定义配置类，添加拦截器
 * controllers 控制器都在这里，网页的入口，处理请求
 * dao 跟数据库交互的包
 * interceptor AOP的代码都在这
